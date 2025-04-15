@@ -1,0 +1,87 @@
+
+.footer {
+  background-color: #faf8f8;
+  color: #0a0a0a;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+  width: 50%;
+}
+
+.footer-left h3, .footer-right h3 {
+  color: #090909;
+  font-size: 1.5rem;
+}
+
+.footer-left p, .footer-right p {
+  color: #090909;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-list li a {
+  color: #090909;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list li a:hover {
+  color: #090909;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #090909;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #777adc;
+}
+
+.footer-bottom {
+  height: auto;
+  position: fixed;
+  bottom: 0; 
+  width: 100%; 
+  text-align: center; 
+  background-color: white; 
+}
+
+.footer-bottom p {
+  color: #060606; 
+  font-size: 0.8rem; 
+}

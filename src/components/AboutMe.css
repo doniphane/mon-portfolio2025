@@ -1,0 +1,171 @@
+
+body{
+  background: linear-gradient(135deg, #f1f1f1, #ffffff);
+
+}
+.about-me {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #030303;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #030303;
+  line-height: 1.8;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.profile-picture {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.profile-picture img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.05);
+}
+
+.profile-info {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #070707;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .profile-picture img {
+    width: 220px;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+}
+
+body{
+  background: linear-gradient(135deg, #f1f1f1, #ffffff);
+
+}
+.about-me {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #030303;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #030303;
+  line-height: 1.8;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.profile-picture {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.profile-picture img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.05);
+}
+
+.profile-info {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #070707;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .profile-picture img {
+    width: 220px;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+}
+
