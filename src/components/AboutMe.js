@@ -6,6 +6,7 @@ const AboutMe = () => {
   const [commandHistory, setCommandHistory] = useState([
     "Bienvenue dans le terminal de Doniphane Trules.",
     "Tapez `help` pour voir les commandes disponibles.",
+    "Tapez `neofetch` pour voir savoir ma plus grande crainte dans ma vie dévellopeur.",
     "Tapez `exit` pour quitter le terminal et revenir à la section À propos.",
   ]);
   const [currentCommand, setCurrentCommand] = useState("");
