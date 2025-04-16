@@ -1,8 +1,7 @@
-
-body{
+body {
   background: linear-gradient(135deg, #f1f1f1, #ffffff);
-
 }
+
 .about-me {
   text-align: center;
   padding: 3rem 1rem;
@@ -84,88 +83,121 @@ body{
   }
 }
 
-body{
-  background: linear-gradient(135deg, #f1f1f1, #ffffff);
-
+.about-me-container {
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #fff;
 }
-.about-me {
-  text-align: center;
-  padding: 3rem 1rem;
-  color: white;
+
+.terminal {
   max-width: 1000px;
   margin: auto;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.about-me h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: #030303;
-}
-
-.about-me p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #030303;
-  line-height: 1.8;
-}
-
-.profile-container {
+.terminal-header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: #2d2d2d;
 }
 
-.profile-picture {
+.terminal-header .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-header .title {
+  color: #aaa;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terminal-body {
+  height: 700px;
   padding: 1rem;
-  border-radius: 10px;
+  overflow-y: auto;
+  background-color: #000;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.profile-picture img {
-  width: 280px;
-  border-radius: 15px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease-in-out;
+.terminal-line {
+  margin-bottom: 0.5rem;
+  color: #33ff33;
+  white-space: pre-wrap;
 }
 
-.profile-picture img:hover {
-  transform: scale(1.05);
+.terminal-input {
+  display: flex;
+  align-items: center;
+}
+.terminal-input .prompt {
+  margin-right: 0.5rem;
+  color: #33ff33;
 }
 
-.profile-info {
-  text-align: left;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
-  border-radius: 10px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.terminal-input input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #33ff33;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
-.profile-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #070707;
+.terminal .neofetch-info {
+  color: #33ff33;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  padding: 1rem;
 }
 
-.profile-info p {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
-  color: #000000;
+.terminal .neofetch-info span {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .profile-container {
-    flex-direction: column;
-  }
-
-  .profile-picture img {
-    width: 220px;
-  }
-
-  .profile-info {
-    text-align: center;
-  }
+.terminal .neofetch-info .bold {
+  font-weight: bold;
 }
 
+.terminal .neofetch-info .highlight {
+  color: #ff5f56;
+}
+
+.terminal-line:nth-child(odd) {
+  color: #00ff00; /* Vert */
+}
+
+.terminal-line:nth-child(even) {
+  color: #ff6600; /* Orange */
+}
+
+.terminal-line span {
+  color: #3399ff; /* Bleu pour les commandes */
+}
+
+.terminal-body {
+  background: #121212;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-input input {
+  color: #33ff33;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
