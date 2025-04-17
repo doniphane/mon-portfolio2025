@@ -10,6 +10,14 @@ import './Projects.css';
 
 const initialProjects = [
     {
+        title: 'Openlibrary',
+        description: 'Récupération des livres par APi openlibrary.',
+        languages: ['#HTML', '#CSS', '#JS'],
+        githubRepo: 'https://github.com/doniphane/Ma-bibliotheque',
+        githubLink: 'https://doniphane.github.io/Ma-bibliotheque/',
+        image: `${process.env.PUBLIC_URL}/14.png`
+    },
+    {
         title: '🎥 Vidéothèque Ghibli',
         description: 'Récupération des flim via une API projet réalisé en formation',
         languages: ['#HTML', '#Tailwind CSS', '#JS'],
@@ -62,7 +70,8 @@ const initialProjects = [
         githubRepo: 'https://github.com/doniphane/FLag',
         githubLink: 'https://doniphane.github.io/FLag/',
         image: `${process.env.PUBLIC_URL}/7.png`
-    }
+    },
+
 ];
 
 const Projects = () => {
@@ -97,33 +106,33 @@ const Projects = () => {
                 >
                     {initialProjects.map((project, index) => (
                         <SwiperSlide key={index}>
-                           <div className="project-card">
-    <div className="project-image-wrapper">
-        <img src={project.image} alt={`Aperçu du projet ${project.title}`} />
-    </div>
-    <div className="project-content">
-        <h3>{project.title}</h3>
-        <p className="description">{project.description}</p>
-        <div className="languages">
-            {project.languages.map((lang, idx) => (
-                <p key={idx} className="language">{lang}</p>
-            ))}
-        </div>
-        <div className="project-buttons">
-            {project.githubLink && (
-                <Link to={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <button className="btn-github">Voir le site</button>
-                </Link>
-            )}
-            {project.githubRepo && (
-                <Link to={project.githubRepo} target="_blank" rel="noopener noreferrer">
-                    <button className="btn-github">Voir sur GitHub</button>
-                </Link>
-            )}
-        </div>
-    </div>
-</div>
-<br></br>
+                            <div className="project-card">
+                                <div className="project-image-wrapper">
+                                    <img src={project.image} alt={`Aperçu du projet ${project.title}`} />
+                                </div>
+                                <div className="project-content">
+                                    <h3>{project.title}</h3>
+                                    <p className="description">{project.description}</p>
+                                    <div className="languages">
+                                        {project.languages.map((lang, idx) => (
+                                            <p key={idx} className="language">{lang}</p>
+                                        ))}
+                                    </div>
+                                    <div className="project-buttons">
+                                        {project.githubLink && (
+                                            <Link to={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                                <button className="btn-github">Voir le site</button>
+                                            </Link>
+                                        )}
+                                        {project.githubRepo && (
+                                            <Link to={project.githubRepo} target="_blank" rel="noopener noreferrer">
+                                                <button className="btn-github">Voir sur GitHub</button>
+                                            </Link>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                            <br></br>
                         </SwiperSlide>
                     ))}
                 </Swiper>
