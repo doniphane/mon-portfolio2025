@@ -16,21 +16,21 @@ const AboutMe = () => {
     const trimmed = currentCommand.trim().toLowerCase();
     let response;
 
-   
+
     switch (trimmed) {
       case "help":
         response = "Commandes disponibles : help, whoami, clear, exit, neofetch";
         break;
       case "whoami":
         response =
-          "Utilisateur : Doniphane Trules\nRôle : Développeur Web & passionné de cybersécurité.";
+          "Utilisateur : Doniphane Trules\nRôle : Développeur Web & passionné pour la cybersécurité.";
         break;
       case "clear":
         setCommandHistory([]);
         setCurrentCommand("");
         return;
-        case "neofetch":
-          response = `
+      case "neofetch":
+        response = `
         Tux - Le pingouin Linux :
         
                 .--.
@@ -44,11 +44,11 @@ const AboutMe = () => {
                 Système d'exploitation : Linux — la seule interface où je me sens vraiment moi.
                 Architecture : 64 bits — comme ma personnalité, fragmentée, empilée en couches.
                 Uptime : 5 jours — mais les pensées tournent depuis bien plus longtemps.
-                RAM : 8 Go — mais aucune mémoire vive pour oublier mes erreurs.
-                CPU : Intel i7 — assez puissant pour faire tourner Kali… et mes regrets.
+                RAM : 32 Go — mais aucune mémoire vive pour oublier mes erreurs.
+                CPU : Intel i9 — assez puissant pour faire tourner Kali… et mes regrets.
         
                 -----------------------------
-                fsociety.log > anecdote :
+                doniphane.log > anecdote :
         
                 Elliot n’a pas hésité. Une backdoor, un reverse shell, et il s’est infiltré.
                 Il a tapé \`git add .\`, \`git commit -m "Goodbye, E Corp."\`, puis il a appuyé sur Entrée.
@@ -78,9 +78,9 @@ const AboutMe = () => {
                 Et ce ne sera pas juste du code.
                 Ce sera moi, en entier.
           `;
-          break;
-        
-        
+        break;
+
+
       case "exit":
         setShowTerminal(false);
         setCommandHistory([

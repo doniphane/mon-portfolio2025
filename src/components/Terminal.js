@@ -10,7 +10,7 @@ const Terminal = ({ onExit }) => {
   const [input, setInput] = useState("");
   const terminalRef = useRef(null);
 
-  // Fonction pour gérer les commandes dans le terminal
+
   const handleCommand = (cmd) => {
     const command = cmd.trim().toLowerCase();
     let response = "";
@@ -44,7 +44,7 @@ const Terminal = ({ onExit }) => {
         setHistory([]);
         return;
       case "exit":
-        onExit(); // Appelle la fonction pour fermer le terminal
+        onExit();
         return;
       default:
         response = `Commande inconnue : ${command}. Tapez 'help' pour voir les commandes disponibles.`;
@@ -58,7 +58,7 @@ const Terminal = ({ onExit }) => {
     ]);
   };
 
-  // Fonction pour gérer l'événement de pression de touche
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       handleCommand(input);
@@ -66,7 +66,7 @@ const Terminal = ({ onExit }) => {
     }
   };
 
-  // Scroll automatique vers le bas
+
   useEffect(() => {
     terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
   }, [history]);
