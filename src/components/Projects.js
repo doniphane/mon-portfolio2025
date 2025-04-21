@@ -10,6 +10,14 @@ import './Projects.css';
 
 const initialProjects = [
     {
+        title: 'WorldExplorer',
+        description: 'Récupération des flag par APi Rescountry .',
+        languages: ['#ReactJS', '#CSS', '#JS', '#Html '],
+        githubRepo: 'https://github.com/doniphane/worldexplorer',
+        githubLink: 'https://doniphane.github.io/worldexplorer/',
+        image: `${process.env.PUBLIC_URL}/WorldExplorer.png`
+    },
+    {
         title: 'Openlibrary',
         description: 'Récupération des livres par APi openlibrary.',
         languages: ['#HTML', '#CSS', '#JS'],
