@@ -14,7 +14,7 @@ const initialProjects = [
         description: 'Récupération des flag par APi Rescountry .',
         languages: ['#ReactJS', '#CSS', '#JS', '#Html '],
         githubRepo: 'https://github.com/doniphane/worldexplorer',
-        githubLink: 'https://doniphane.github.io/worldexplorer/',
+        githubLink: 'https://worldexplorer.onrender.com/',
         image: `${process.env.PUBLIC_URL}/WorldExplorer.png`
     },
     {
