@@ -10,6 +10,14 @@ import './Projects.css';
 
 const initialProjects = [
     {
+        title: 'GhibliApp-react',
+        description: 'Une petite application React qui utilise l \'API publique [Studio Ghibli] pour afficher une liste de films. Elle permet de consulter les détails d’un film, de les ajouter en favoris, de rechercher des titres et de trier la liste selon différents critères. .',
+        languages: ['#ReactJS', '#CSS', '#JS', '#Html '],
+        githubRepo: 'https://github.com/doniphane/ghibli-app-React',
+        githubLink: 'https://ghibli-app-react.onrender.com/',
+        image: `${process.env.PUBLIC_URL}/15.png`
+    },
+    {
         title: 'WorldExplorer',
         description: 'Récupération des flag par APi Rescountry .',
         languages: ['#ReactJS', '#CSS', '#JS', '#Html '],
